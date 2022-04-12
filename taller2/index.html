@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>JS innerHTML Practice</title>
+</head>
+<body>
+    <div class="container">
+        <section class="calculator">
+            <h2 class="calculator--title">
+                Calculadora de porcentaje <br>de descuentos
+            </h2>
+            <form action="">
+                <label for="productValue">Valor del producto</label>
+                <input type="text" name="productValue" id="productValue">
+                <label for="discountPercentage">Porcentaje de descuento</label>
+                <input type="text" name="discountPercentage" id="discountPercentage">
+                <input type="button" value="Enviar" id="submitButton" onclick="calcularPorcentaje()">
+            </form>
+            <div class="calculator__response">
+                <fieldset>
+                    <legend>Valor total</legend>
+                    <span id="response"></span>
+                </fieldset>
+            </div>    
+        </section>
+    </div>
+    <div class="color""></div>
+
+    <!-- Script of JS -->
+    <script src="./script.js"></script>
+
+</body>
+</html>

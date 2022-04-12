@@ -1,0 +1,129 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+body {
+
+    background-color: #f77f00;
+    
+}
+
+body::before {
+
+    content: "";
+    background-image: url("./img/background.png");
+    background-size: 500px;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+.container {
+    
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.calculator {
+    
+    background-color: #003049;
+    width: 200px;
+    height: 400px;
+    color: white;
+    display: inherit;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 25px;
+    position: absolute;
+    justify-content: space-around;
+    border-bottom: solid 8px #021b28;
+
+}
+
+.calculator--title {
+
+    text-align: center;
+    line-height: 20px;
+}
+
+.calculator form {
+
+    display: inherit;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.calculator form label {
+
+    margin-top: 5px;
+
+}
+
+.calculator form input[type="text"] {
+
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    height: 30px;
+    border-radius: 25px;
+    color: white;
+    padding: 0px 20px;
+    outline: none;
+    text-align: center;
+
+}
+
+.calculator form input[type="button"] {
+
+    background-color: #f77f00;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-bottom: solid 4px #7b4205;
+
+}
+
+.calculator .calculator__response fieldset {
+
+    border-radius: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calculator .calculator__response fieldset legend {
+
+    text-align: center;
+    padding: 0px 5px;
+
+}
+
+.calculator .calculator__response span {
+
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+
