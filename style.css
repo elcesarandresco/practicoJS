@@ -1,0 +1,112 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.operators {
+
+    width: 100%;
+    display: flex;
+
+}
+
+.context-table {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    width: 33.3333%; 
+    height: auto;
+    color: white;
+    padding: 30px;
+    box-sizing: border-box;
+
+
+}
+
+.circulo {
+
+    background-color: orangered;
+
+}
+
+.circulo-buttons{
+
+    color: orangered!important;
+    
+
+}
+
+.triangulo {
+
+    background-color: darkgoldenrod;
+
+}
+
+.triangulo-buttons{
+
+    color: darkgoldenrod!important;
+
+}
+
+.context-table h2 {
+
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 10px;
+
+}
+
+.context-table form{
+
+    display: inherit;
+    flex-direction: column;
+
+}
+
+.context-table form input[type="number"] {
+
+    border: none;
+    border-radius: 25px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 0px 20px;
+    outline: none;
+    margin: 20px 0px;
+    text-align: center;
+
+}
+
+.context-table form button {
+
+    background-color: white;
+    color: blueviolet;
+    width: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.context-table form .result{
+
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    text-align: center;
+    color: white;
+
+}
+
+
+
+

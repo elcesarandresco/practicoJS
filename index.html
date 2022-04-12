@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Codigos</title>
+    </head>
+    <body>
+        
+        <header>
+            <h1>
+                Figuras geométricas
+            </h1>
+            <p>Este es el primero taller del curso práctico de JS</p>
+        </header>
+        <div class="operators">
+            <section class="cuadrado context-table">
+                    <h2>
+                    Calcula el área y<br> perímetro de un cuadrado
+                </h2>
+                <form>
+                    <label for="InputCuadrado">
+                        Escribe cuánto mide cada lado de tu cuadrado:
+                    </label>
+                    <input type="number" id="InputCuadrado">
+                    <button type="button" onclick="calcularPerimetroCuadrado()">
+                        Calcular el perímetro
+                    </button>
+                    <button type="button" id="EnviarCuadrado" onclick="calcularAreaCuadrado()">
+                        Calcular el área
+                    </button>
+                    <input type="text" class="result" id="CuadradoResult" disabled>
+                </form>
+            </section>
+            <section class="triangulo context-table">
+                <h2>
+                    Calcula el área y<br> perímetro de un cuadrado
+                </h2>
+                <form>
+                    <label for="InputCuadrado">
+                        Escribe cuánto mide cada lado de tu cuadrado:
+                    </label>
+                    <input type="number" id="InputCuadrado">
+                    <button class="triangulo-buttons" type="button" onclick="calcularPerimetroCuadrado()">
+                        Calcular el perímetro
+                    </button>
+                    <button class="triangulo-buttons" type="button" id="EnviarCuadrado" onclick="calcularAreaCuadrado()">
+                        Calcular el área
+                    </button>
+                    <input type="text" class="result" id="CuadradoResult" disabled>
+                </form>
+            </section>
+            <section class="circulo context-table">
+                <h2>
+                    Calcula el área y<br> perímetro de un cuadrado
+                </h2>
+                <form>
+                    <label for="InputCuadrado">
+                        Escribe cuánto mide cada lado de tu cuadrado:
+                    </label>
+                    <input type="number" id="InputCuadrado">
+                    <button class="circulo-buttons" type="button" onclick="calcularPerimetroCuadrado()">
+                        Calcular el perímetro
+                    </button>
+                    <button class="circulo-buttons" type="button" id="EnviarCuadrado" onclick="calcularAreaCuadrado()">
+                        Calcular el área
+                    </button>
+                    <input type="text" class="result" id="CuadradoResult" disabled>
+                </form>
+            </section>
+        </div>
+        
+        
+        
+        <script src="./figuras.js"></script>
+
+    </body>
+</html>
