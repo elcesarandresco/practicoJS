@@ -26,6 +26,12 @@ body::before {
 
 }
 
+.separator {
+
+    margin: 20px;
+
+}
+
 .container {
     
     height: 100vh;
@@ -40,13 +46,13 @@ body::before {
     
     background-color: #003049;
     width: 200px;
-    height: 400px;
+    height: 300px;
     color: white;
     display: inherit;
     flex-direction: column;
     padding: 40px;
+    position: relative;
     border-radius: 25px;
-    position: absolute;
     justify-content: space-around;
     border-bottom: solid 8px #021b28;
 
@@ -72,7 +78,7 @@ body::before {
 
 }
 
-.calculator form input[type="text"] {
+.calculator .calculator__form form input[type="text"] {
 
     margin-top: 10px;
     background: rgba(0, 0, 0, 0.3);
@@ -86,7 +92,7 @@ body::before {
 
 }
 
-.calculator form input[type="button"] {
+.calculator .calculator__form form input[type="button"] {
 
     background-color: #f77f00;
     border: none;
@@ -99,31 +105,103 @@ body::before {
     font-size: 15px;
     cursor: pointer;
     border-bottom: solid 4px #7b4205;
+    width: 100%;
 
 }
 
-.calculator .calculator__response fieldset {
+.calculator .calculator__applyCoupon {
+
+    width: 100%;
+    background: #f77f00;
+    height: 30px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+
+}
+
+.calculator .calculator__applyCoupon form {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.calculator .calculator__applyCoupon form input[type="text"] {
+
+    width: 80px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    color: white;
+
+}
+
+.calculator .calculator__applyCoupon form input[type="text"]::placeholder {
+
+    color: rgba(255, 255, 255, 0.3);
+
+}
+
+.calculator .calculator__applyCoupon form input[type="button"] {
+
+    margin: 0px;
+    border: none;
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer;
+
+}
+
+.product {
+
+    height: 300px;
+    width: 300px;
+    position: relative;
+    background-color: #eae2b7;
+    border-radius: 25px;
+    border-bottom: solid 8px #807c64;
+    padding: 40px;
+
+}
+
+.product .product__response fieldset {
 
     border-radius: 20px;
-    height: 100px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-.calculator .calculator__response fieldset legend {
+.product .product__response fieldset legend {
 
     text-align: center;
     padding: 0px 5px;
 
 }
 
-.calculator .calculator__response span {
+.product .product__response span {
 
     font-weight: bold;
     font-size: 25px;
 
 }
 
+.calculator--removeCoupon {
 
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+.hide {
+
+    display: none!important;
+
+}

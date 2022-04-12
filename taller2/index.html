@@ -9,29 +9,39 @@
 </head>
 <body>
     <div class="container">
-        <section class="calculator">
+        <section class="calculator separator">
             <h2 class="calculator--title">
                 Calculadora de porcentaje <br>de descuentos
             </h2>
-            <form action="">
-                <label for="productValue">Valor del producto</label>
-                <input type="text" name="productValue" id="productValue">
-                <label for="discountPercentage">Porcentaje de descuento</label>
-                <input type="text" name="discountPercentage" id="discountPercentage">
-                <input type="button" value="Enviar" id="submitButton" onclick="calcularPorcentaje()">
-            </form>
-            <div class="calculator__response">
+            <div class="calculator__form">
+                <form action="">
+                    <label for="productValue">Valor del producto</label>
+                    <input type="text" name="productValue" id="productValue">
+                    <input type="button" value="Enviar" id="submitButton" onclick="calcularPorcentaje()">
+                    <input type="button" class="hide" value="Calcular otro" id="resetButton" onclick="resetState()">
+                </form>
+            </div>
+            <div class="calculator__applyCoupon" id="couponArea">
+                <form action="" class="calculator__couponForm" id="couponForm">
+                    <input type="text" placeholder="CODE1234" id="coupon" maxlength="8">
+                    <input type="button" value="Aplicar cupón" onclick="aplicarCupon()">
+                </form>
+            </div>
+            <button class="calculator--removeCoupon hide" id="removeCoupon" onclick="removerCupon()">Remover cupón</button>
+        </section>
+        <section class="product separator">
+            <div class="product__response">
                 <fieldset>
                     <legend>Valor total</legend>
                     <span id="response"></span>
                 </fieldset>
-            </div>    
+            </div>
         </section>
     </div>
-    <div class="color""></div>
 
     <!-- Script of JS -->
     <script src="./script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 </html>
