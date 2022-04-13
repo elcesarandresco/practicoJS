@@ -63,17 +63,18 @@ const aplicarCupon = () => {
 }
 
 const removerCupon = () => {
-    
+
     let html = `
         <form action="" id="couponForm">
             <input type="text" placeholder="CODE1234" id="coupon" maxlength="8">
             <input type="button" value="Aplicar cupón" onclick="aplicarCupon()">
         </form>
     `
+
     removeCoupon.classList.add('hide')
     cuponArea.innerHTML = html
-    cupon.value = ''
     descuento = 0
+
     calcularPorcentaje()
 
     Swal.fire(
